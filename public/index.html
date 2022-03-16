@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Hello</h1>
+        <p>World</p>
+
+        <script>
+            const data = {};
+            data[0] = 1;
+            data[1] = 2;
+            const options = {
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                method: 'POST',
+                body: JSON.stringify(data)
+            };
+            fetch('/api', options);
+        </script>
+
+    </body>
+</html>
