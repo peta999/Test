@@ -20,7 +20,6 @@ client.on('message', (topic, message)=>{
     var sql = "INSERT INTO messungen (temperature, humidity, time) VALUES ('" + data_array[0] +"', '" + data_array[1] +"', '" + data_array[2] + "')"
     con.query(sql, function (err, result) {
         if (err) throw err;
-        console.log(result.());
     });
 
 });
