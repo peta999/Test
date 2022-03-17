@@ -9,6 +9,7 @@
   "author": "Alexander Pest",
   "license": "ISC",
   "dependencies": {
+    "@mysql/xdevapi": "^8.0.28",
     "aedes": "^0.46.1",
     "aedes-logging": "^2.0.1",
     "express": "^4.17.1",
