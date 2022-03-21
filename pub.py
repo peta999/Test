@@ -13,11 +13,11 @@ def on_message(client, userdata, msg):
     print(msg.topic+" "+str(msg.payload))
 
 client = mqtt.Client()
-client.on_connect = on_connect()
-client.on_message = on_message()
+client.on_connect = on_connect
+client.on_message = on_message
 
 client.connect("192.168.2.54", 1883, 60)
-client.publish("Test", "Hello World", 1)
+client.publish("settings", "10,-10", 1)
 client.subscribe("settings", 1)
 
 # Blocking call that processes network traffic, dispatches callbacks and
