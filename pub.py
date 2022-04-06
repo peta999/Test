@@ -17,7 +17,7 @@ client.on_connect = on_connect
 client.on_message = on_message
 
 client.connect("192.168.2.54", 1883, 60)
-client.publish("settings", "0,0", 1)
+client.publish("data", "0,0", 1)
 client.subscribe("settings", 1)
 
 # Blocking call that processes network traffic, dispatches callbacks and
