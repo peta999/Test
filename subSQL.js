@@ -1,7 +1,7 @@
 const mqtt = require('mqtt')
 const mysql = require('mysql');
 const { TIMESTAMP } = require('mysql/lib/protocol/constants/types');
-const client = mqtt.connect('mqtt://192.168.2.54:1883')
+const client = mqtt.connect('mqtt://192.168.2.80:1883')
 const topic = "data"
 
 
