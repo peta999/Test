@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
     </head>
-    <body>
-        <h1>Hello</h1>
-        <p>World</p>
+    <body style="background-color:powderblue;">
+        <h1>Gewächshausüberwachung</h1>
+        
+        <button type="button">Click Me!</button>
 
+        <p id="demo">Click me.</p>
         <script>
-            const data = {};
-            data[0] = 1;
-            data[1] = 2;
-            const options = {
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                method: 'POST',
-                body: JSON.stringify(data)
-            };
-            fetch('/api', options);
-        </script>
+        document.getElementById("demo").onclick = function() {myFunction()};
 
+        function myFunction() {
+        document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+        }
+        </script>
     </body>
 </html>
