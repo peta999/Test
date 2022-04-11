@@ -6,7 +6,7 @@ const topic = "data"
 
 
 var con = mysql.createConnection({
-    host: "192.168.2.80:3306",
+    host: "192.168.2.80",
     user: "sqluser",
     password: "password",
     database: "gewaechshaus"
